@@ -1,0 +1,816 @@
+/* --------------------------- */
+/* --Responsive Design Start Here */
+/* ------------------------------- */
+
+@media screen and (max-width: 900px) {
+
+     section {
+          padding: 0 2rem;
+     }
+
+     h1 {
+          font-size: 30px;
+     }
+
+     h2 {
+          font-weight: 600;
+          font-size: 24px;
+          width: 100%;
+     }
+
+     .heading {
+          padding: 2rem 0;
+     }
+
+     .logo img {
+          max-height: 60px;
+     }
+
+     /* --------------------------- */
+     /* --Reusable Navigation Responsive style Here */
+     /* ------------------------------- */
+     .nav-links {
+          position: absolute;
+          top: 12%;
+          left: 0;
+          width: 100%;
+          background-color: var(--primary-bg-color);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          z-index: 1;
+     }
+
+     .nav-links ul {
+          flex-direction: column;
+     }
+
+     .nav-links ul li {
+          margin: 10px 0;
+          opacity: 0;
+          transform: translateY(-20px);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+     }
+
+     .btn {
+          margin-bottom: 20px;
+     }
+
+     .menu-toggle {
+          display: block;
+     }
+
+
+     .nav-links.active {
+          opacity: 1;
+          z-index: 2;
+     }
+
+     .nav-links.active ul li {
+          opacity: 1;
+          transform: translateY(0);
+          transition-delay: 0.1s;
+     }
+
+
+
+     /* Hamburger Icon Animation */
+     .menu-toggle i.fa-bars {
+          display: block;
+          animation: scaleIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), fadeIn 0.5s ease;
+     }
+
+     /* Close Icon Animation */
+     .menu-toggle i.fa-times {
+          display: none;
+          animation: scaleIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), fadeIn 0.5s ease;
+     }
+
+     /* Keyframe Animations */
+     @keyframes scaleIn {
+          from {
+               transform: scale(0);
+          }
+
+          to {
+               transform: scale(1);
+          }
+     }
+
+     @keyframes fadeIn {
+          from {
+               opacity: 0;
+          }
+
+          to {
+               opacity: 1;
+          }
+     }
+
+     /* ------------------------- */
+     /* Reusable Footer-(Responsive Design) */
+     /* -------------------------- */
+     footer {
+          padding: 4rem 2rem;
+     }
+
+     .footer-content-1 {
+          flex-direction: column;
+          padding-bottom: 6rem;
+     }
+
+     .footer-links-btn {
+          margin-top: 2.7rem;
+     }
+
+     .footer-content-2 {
+          margin-top: 2rem;
+          flex-direction: column;
+     }
+
+     .footer-content-2 p {
+          font-size: 15px;
+          text-align: center;
+          margin-top: 1.5rem;
+     }
+
+     .footer-content-2 div {
+          margin-top: 2rem;
+     }
+
+     /* ------------------------- */
+     /*(HOME PAGE RESPONSIVE DESIGN)*/
+     /* -------------------------- */
+     /* ------------------------- */
+     /* Section-1-(Responsive Design) */
+     /* -------------------------- */
+
+     .home-section-1-left-content {
+          margin-top: 2rem;
+          width: 80%;
+     }
+
+     .home-section-1-left-content p {
+          font-size: 14px;
+     }
+
+     .home-section-1-content {
+          display: block;
+
+     }
+
+     .home-section-1-right-content {
+          width: 100%;
+          margin-top: 1rem;
+
+     }
+
+     .home-section-1-right-content-icon-1 img {
+          width: 6%;
+          top: 26rem;
+          left: 3rem;
+          padding: 20px 15px;
+          animation: none;
+     }
+
+     .home-section-1-right-content-image img {
+          margin-left: -12px;
+          width: 97%;
+     }
+
+
+     .home-section-1-right-content-icon-2 img {
+          width: 6%;
+          right: 1rem;
+          top: 30rem;
+          animation: none;
+     }
+
+     /* ------------------------- */
+     /* Section-2-(Responsive Design) */
+     /* -------------------------- */
+     .home-section-2-container {
+          border-radius: 75px 75px 0 0;
+          padding: 0 2rem;
+     }
+
+     .home-section-2-team-profile {
+          flex-direction: column;
+          padding: 1.5rem 0rem;
+     }
+
+     .home-section-2-team-profile img {
+          width: 50%;
+     }
+
+     .home-section-2-team-profile img {
+          width: 50%;
+          padding: 1.5rem 0;
+     }
+
+     .home-section-2-team-profile p {
+          font-size: 17px;
+          text-align: center;
+          line-height: 40px;
+     }
+
+     .section-2-team-profile .btn {
+          margin: 1.5rem 0;
+
+     }
+
+     .home-section-2-container .heading h2 {
+          width: 100%;
+     }
+
+     .home-section-2-content {
+          display: flex;
+          align-items: end;
+          flex-direction: column;
+          padding-bottom: 3rem;
+     }
+
+     .home-section-2-left-content img {
+          width: 100%;
+
+     }
+
+     .home-section-2-right-content-box {
+          flex-direction: column;
+          padding: 1rem 1.6rem;
+          align-items: flex-start;
+     }
+
+     .home-section-2-right-content-box i {
+          padding: 1rem 0;
+     }
+
+     .home-section-2-right-content-box-content P {
+
+          text-align: left;
+          line-height: 22px;
+          width: 100%;
+     }
+
+     /* ------------------------- */
+     /* Section-3-(Responsive Design) */
+     /* -------------------------- */
+     .home-section-3 {
+          padding: 0 1rem;
+     }
+
+     .home-section-3-box-container {
+          flex-direction: column;
+          padding-bottom: 2rem;
+     }
+
+     .home-section-3-box {
+          flex-direction: column;
+          margin-bottom: 2rem;
+          width: 76%;
+          margin-left: 0;
+     }
+
+     .home-section-3-content-explore {
+          padding-bottom: 2rem;
+     }
+
+     /* ------------------------- */
+     /* Section-4-(Responsive Design) */
+     /* -------------------------- */
+     .home-section-4-container {
+          display: block;
+          padding: 1rem 0;
+     }
+
+     .home-section-4-container .achievement {
+          margin: 4rem;
+     }
+
+     .home-section-4-container .achievement h2 {
+          font-size: 45px;
+     }
+
+     .count-up {
+          animation: none;
+     }
+
+     /* ------------------------- */
+     /* Section-5-(Responsive Design) */
+     /* -------------------------- */
+     .home-section-5 {
+          padding: 0 1rem;
+     }
+
+     .home-section-5-projects-box {
+          width: 100%;
+     }
+
+     .home-section-5-projects-box img {
+          height: 200px;
+     }
+
+     /* ------------------------- */
+     /* Section-6-(Responsive Design) */
+     /* -------------------------- */
+
+     .home-section-6-container {
+          padding-bottom: 2rem;
+     }
+
+     .home-section-6-leading-tools-first-row .icon,
+     .home-section-6-leading-tools-second-row .icon {
+          width: 14%;
+          margin: 0 8vw;
+
+     }
+
+     /* ------------------------- */
+     /* Section-7-(Responsive Design) */
+     /* -------------------------- */
+     .home-section-7-container {
+          display: block;
+          padding: 1rem 0;
+     }
+
+     .home-section-7-left-content {
+          padding: 0;
+     }
+
+     .home-section-7-left-content img {
+          height: 300px;
+
+     }
+
+     .home-section-7-right-content {
+          margin-top: 2rem;
+          padding-left: 10px;
+     }
+
+     .home-section-7-call-service-box {
+          width: 100%;
+          text-align: center;
+          flex-direction: column;
+     }
+
+     .home-section-7-call-service-box i {
+          margin-left: 0rem;
+     }
+
+     .home-section-7-call-service {
+          padding: 3rem 0 1rem;
+     }
+
+     /* ------------------------- */
+     /* Section-8-(Responsive Design) */
+     /* -------------------------- */
+     .home-section-8-review-box {
+          padding: 2rem;
+          margin-right: 0rem;
+          width: 80%;
+          margin-top: 1rem;
+     }
+
+     .home-section-8-reviews {
+          display: block;
+     }
+
+     /* ------------------------- */
+     /* Section-9-(Responsive Design) */
+     /* -------------------------- */
+
+     .home-section-9 {
+          border-radius: 0 0 75px 75px;
+          padding-bottom: 2rem;
+     }
+
+     .home-section-9-clients {
+          flex-direction: column;
+          padding: 3rem 0;
+     }
+
+     .home-section-9-clients a {
+          width: 50%;
+     }
+
+     .home-section-9-clients div {
+          width: 100%;
+          margin-top: 1rem;
+          flex-direction: column;
+     }
+
+     .client-logo-1 {
+          width: 50%;
+     }
+
+     .client-logo-2 {
+          width: 31%;
+     }
+
+     .client-logo-3 {
+          width: 38%;
+     }
+
+     /* CSS for Pulsating Logo Animation */
+     .client-logo-1,
+     .client-logo-2,
+     .client-logo-3 {
+          animation: none;
+     }
+
+
+     .home-section-9-clients div img {
+          margin: 1rem 0;
+     }
+
+     .home-section-9-insights {
+          padding: 0;
+          flex-direction: column;
+     }
+
+     .home-section-9-insight-box {
+          padding: 10rem;
+     }
+
+     .home-section-9-insight-box {
+          margin-bottom: 2rem;
+     }
+
+
+     /* ------------------------- */
+     /* (ABOUT PAGE RESPONSIVE DESIGN)*/
+     /* -------------------------- */
+     /* ------------------------- */
+     /* Section-1-(Responsive Design) */
+     /* -------------------------- */
+
+     .about-section-1-content .box-style {
+          width: 37%;
+     }
+
+     .about-section-1-left-content {
+          margin-top: 2rem;
+          width: 98%;
+     }
+
+     .about-section-1-left-content p {
+          font-size: 14px;
+          width: 80%;
+     }
+
+     .about-section-1-content {
+          display: block;
+
+     }
+
+     .about-section-1-right-content {
+          width: 100%;
+          margin-top: 1rem;
+
+     }
+
+     .about-section-1-right-content-image img {
+          margin-left: -12px;
+     }
+
+     /* ------------------------- */
+     /* Section-2-(Responsive Design) */
+     /* -------------------------- */
+     .about-section-2-container {
+          flex-direction: column;
+          border-radius: 75px 75px 0 0;
+          padding: 50px 2rem;
+     }
+
+     .about-section-2-left-content h2 {
+          font-weight: 400;
+          font-size: 24px;
+          width: 100%;
+     }
+
+     .about-section-2-left-content a {
+          padding-bottom: 1rem;
+     }
+
+     .about-section-2-left-content p {
+          width: 96%;
+          margin: 2rem 0;
+     }
+
+     /* ------------------------- */
+     /* Section-3-(Responsive Design) */
+     /* -------------------------- */
+     .about-section-3 {
+          padding: 0 1rem;
+     }
+
+     .about-section-3-boxes {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: column;
+          padding-bottom: 2rem;
+     }
+
+     .about-section-3-box {
+          width: 70%;
+          margin-bottom: 1rem;
+     }
+
+     /* ------------------------- */
+     /* Section-4-(Responsive Design) */
+     /* -------------------------- */
+     .about-section-4 {
+          border-radius: 0 0 75px 75px;
+     }
+
+     .about-section-4-container {
+          display: block;
+          padding: 2rem 0;
+     }
+
+     .about-section-4-content-years {
+          display: flex;
+     }
+
+     .about-section-4-content-2 {
+          width: 100%;
+     }
+
+     .about-section-4-content-2 .box-style {
+          width: 47%;
+          padding: 7px 0;
+          font-size: 15px;
+     }
+
+     .about-section-4-container img {
+          width: 100%;
+          margin-top: 2rem;
+     }
+
+     .about-section-4-content-years h3 {
+          font-size: 17px;
+          margin-left: 0.8rem;
+     }
+
+
+
+
+     /* ------------------------- */
+     /* (Service PAGE RESPONSIVE DESIGN)*/
+     /* -------------------------- */
+     /* ------------------------- */
+     /* Section-1-(Responsive Design) */
+     /* -------------------------- */
+     .service-section-1-content {
+          margin-left: 0rem;
+     }
+
+     .service-section-1-content .box-style {
+          width: 37%;
+     }
+
+     .service-section-1-content p {
+          font-size: 10px;
+          width: 100%;
+     }
+
+     /* ------------------------- */
+     /* Section-2-(Responsive Design) */
+     /* -------------------------- */
+     .service-section-2 {
+          border-radius: 75px 75px 0 0;
+          padding: 3rem 2rem;
+     }
+
+     .service-box-container {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 2rem 0;
+     }
+
+     .service-box {
+          margin-bottom: 0;
+          width: 95%;
+     }
+
+     .service-box h3 {
+          text-align: center;
+     }
+
+     /* ------------------------- */
+     /* Section-3-(Responsive Design) */
+     /* -------------------------- */
+     .service-section-3-icons {
+          flex-direction: column;
+          padding: 0rem 2rem;
+     }
+
+     .device-icon img {
+          width: 40%;
+     }
+
+     .device-icon {
+          margin: 2rem 0;
+     }
+
+     /* ------------------------- */
+     /* Section-4-(Responsive Design) */
+     /* -------------------------- */
+     .service-section-4-content-1 p {
+          width: 100%;
+          font-size: 15px;
+     }
+
+     .service-section-4-content-1 {
+          padding: 2rem 0rem;
+          text-align: left;
+     }
+
+     .service-section-4-content-2 {
+          flex-direction: column;
+     }
+
+     .service-section-4-content-2 img {
+          width: 100%;
+     }
+
+     .service-section-4-content-2-right-side {
+          width: 100%;
+     }
+
+     .service-section-4-content-2-right-side h5 {
+          font-size: 17px;
+          margin: 18px 0;
+     }
+
+
+     /* ------------------------- */
+     /* Section-5-(Responsive Design) */
+     /* -------------------------- */
+     .service-section-5 {
+          border-radius: 0 0 75px 75px;
+     }
+
+     .service-section-5-container {
+          padding: 3rem 0rem;
+     }
+
+     .service-section-5-content-2 {
+          padding: 0rem;
+          flex-direction: column;
+     }
+
+     .service-section-5-content-1 {
+          text-align: left;
+     }
+
+     .service-section-5-content-1 p {
+          padding: 1rem 0rem;
+     }
+
+     .service-section-5-content-2-left-side {
+          width: 100%;
+     }
+
+     .service-section-5-content-2-right-side {
+          padding: 0rem;
+          margin-top: 2.5rem
+     }
+
+     .service-section-5-content-2-right-side img {
+          width: 100%;
+          margin-left: 0rem;
+     }
+
+
+
+     /* ------------------------- */
+     /* (Product PAGE RESPONSIVE DESIGN)*/
+     /* -------------------------- */
+     /* ------------------------- */
+     /* Section-1-(Responsive Design) */
+     /* -------------------------- */
+     .products-section-1 {
+          border-radius: 0 0 75px 75px;
+     }
+
+     .products-section-1-content-heading .box-style {
+          width: 35%;
+     }
+
+     .products-section-1-content-heading p {
+          width: 100%;
+     }
+
+     .products {
+          margin: 1rem 0;
+          flex-direction: column;
+     }
+
+     .products img {
+          order: 1;
+     }
+
+     .product-details {
+          order: 2;
+     }
+
+     .products img {
+          width: 100%;
+          margin: 2rem 0 1rem;
+     }
+
+     .products .product-details {
+          width: 100%;
+     }
+
+     .products .product-details h3 {
+          font-size: 22px;
+          margin-bottom: 15px;
+     }
+
+     .products-section-1-explore-service-box {
+          padding: 2rem 1rem 4rem;
+          width: 90%;
+          margin: 5rem auto 4rem;
+     }
+
+     .products-section-1-explore-service-box h5 {
+          font-size: 15px;
+          padding: 0 1rem;
+
+     }
+
+
+     /* ------------------------- */
+     /* (Solution Partner PAGE RESPONSIVE DESIGN)*/
+     /* -------------------------- */
+     /* ------------------------- */
+     /* Section-1-(Responsive Design) */
+     /* -------------------------- */
+
+     .solution-partner-section-1-left-content .box-style {
+          width: 58%;
+     }
+
+     .solution-partner-section-1-left-content {
+          margin-top: 2rem;
+          width: 98%;
+     }
+
+     .solution-partner-section-1-left-content h1 {
+          font-size: 26px;
+     }
+
+     .solution-partner-section-1-left-content p {
+          font-size: 14px;
+          width: 100%;
+     }
+
+     .solution-partner-section-1-content {
+          display: block;
+          padding: 0;
+     }
+
+     .solution-partner-section-1-right-content {
+          width: 100%;
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+     }
+
+     .solution-partner-section-1-right-content-image {
+          margin: 0 auto;
+          width: 100%;
+     }
+
+     .solution-partner-section-1-right-content-image img {
+          width: 100%;          
+          border-radius: 30px;
+     }
+
+    /* ------------------------- */
+     /* Section-2-(Responsive Design) */
+     /* -------------------------- */
+     .solution-partner-section-2-box-container {
+          flex-direction: column;
+          align-items: center;
+      }
+      .solution-partner-section-2 {
+          padding: 1rem;
+          border-radius: 75px 75px;
+      }
+      .solution-partner-section-2-sub-heading h2 {
+          font-size: 25px;
+          width: 90%;
+      }
+      .solution-partner-section-2-box {
+          width: 80%;
+          padding: 2rem;
+          margin: 10px 0rem;
+          height: 62%;
+      }
+
+}
